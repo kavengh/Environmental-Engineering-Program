@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	  <title>CTE Computer Programming @ Bayside High School</title>
+
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <link type="text/css" href="css/dark-hive/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script> 
+		<link href="css/ctecs.css" rel="stylesheet" />
+		<script src="js/ctecs.js"></script>
+
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$("#menu").html(myMenu(5));
+			})
+            $(function(){
+                // Tabs
+                $( "#dialog" ).dialog({
+                    autoOpen: false,
+                    draggable: false,
+                    modal: true,
+                    close: function(event, ui) { document.body.style.overflow = 'visible'; }		
+                });
+        
+            });
+                
+        </script>
+      <style type="text/css">
+		.sample{margin-top:5px;padding:10px;width:950px;}
+		p{font-size:1.2em;line-height:170%;margin-bottom:20px}
+
+		
+
+			#mapviewer{ text-align:center;padding:10px; border-radius:10px;margin:10px; }
+			#mapviewer img{border-top-left-radius:10px;border-top-right-radius:10px;margin-top:5px;}
+			#mapviewer iframe{border-bottom-left-radius:10px;border-bottom-right-radius:10px;}
+			#mapviewer span{display:block;margin:5px 10px 5px 10px;padding:4px 0px 4px 0px;font-size:1.25em;font-weight:bold;}
+			.msg img{height:125px;margin-top:5px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;float:left;}
+			#desc{height:125px; display:table;padding:5px 0px 0px 5px; }
+			.links a{text-decoration:none;color:blue;}
+			.links a:hover{text-decoration:none;color:#FFAA22;}
+      </style>
+      
+</head>
+<body>
+	<center>
+	<div style="width:1000px;">
+	<div style="border-top-left-radius: 20px;border-top-right-radius: 20px;margin-left:10px;width:970px;;background-image:url(images/zertxtr3.gif);float:left;text-align:left;">&nbsp;</div>
+
+	<div id="tabs" style="border:#000">
+		<ul id="menu">
+
+		</ul>
+			<div id="tabs-1">
+                  <div class="sample">
+                  <table width="100%" border="0"><tr><td width="50%" valign="top">
+					  <div id="mapviewer">
+					  <span id="address">32-24 Corporal Kennedy St<br/>Bayside, New York 11361</span>
+					  <iframe id="map" Name="mapFrame" scrolling="no" width="410" height="300" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=16&amp;cp=40.77179721642221~-73.780378125899&amp;sty=h&amp;draggable=true&amp;v=2&amp;dir=0&amp;where1=32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;form=LMLTEW&amp;pp=40.771797224879265~-73.78037832677364&amp;mkt=en-us&amp;emid=6fbf1b92-f1f9-41bf-218e-5502c8d377be&amp;w=410&amp;h=300"></iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=40.77179721642221~-73.780378125899&amp;lvl=16&amp;sty=h&amp;where1=32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a id="LME_directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=40.77179721642221~-73.780378125899&amp;rtp=~pos.40.771797224879265_-73.78037832677364_32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;lvl=16&amp;sty=h&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;<a id="LME_birdsEye" href="http://www.bing.com/maps/?mm_embed=be&amp;cp=40.77179721642221~-73.780378125899&amp;lvl=18&amp;sty=b&amp;where1=32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;form=LMLTEW" target="_blank">View Bird's Eye</a></div>
+					  </div>
+                  </table>
+                  </div>
+                  <div style="color:#999;padding:5px;">Copyright &copy; 2013 Bayside High School Computer Programming CTE.  All rights reserved.</div>
+            </div>
+		</div>
+	
+    </div>
+    </center>
+    
+        <div id="dialog" title="Download complete"></div>
+</body>
+</html>

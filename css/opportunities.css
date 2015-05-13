@@ -1,0 +1,37 @@
+.opportunity{
+			box-shadow:4px 4px 4px grey;
+			border:1px solid grey;
+			margin:20px;
+			padding:20px;
+		}
+		.website{
+			background-color:black;
+			color:white;
+			padding:5px;
+			border-radius:10px;
+		}
+		.website:hover{
+			background-color:grey;
+			color:white;
+			padding:5px;
+			border-radius:10px;
+		}
+		.opportunity img{
+		width:170px;
+		float:left;
+		padding:1px;
+		PADDING-TOP: 15px;
+		}
+	
+		.title{ 
+		background-color:black; color:white;font-weight:bold;text-align: center;padding:9px;font-size:1.5em
+		}
+		.description{
+		background-color:white;color:black;padding:10px;font-weight:normal;display:table;
+		}
+		
+		.posted{
+		background-color:gray;color:white;font-style:italic;padding:5px 0px 5px 10px;
+		}
+		
+	

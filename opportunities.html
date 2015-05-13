@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Environmental Engineering</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css\bootstrap-theme.min.css" rel="stylesheet">
+	 <link href="css\carousel.css" rel="stylesheet">
+<style>
+    img.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+</style>
+
+  </head>
+
+  <body>
+  <div class="navbar-wrapper">
+      <div class="container" id="menusystem">
+
+
+	</div>
+	</div>
+	<br><br><br><br><br>
+    <div class="container theme-showcase" role="main">
+
+      <a><img class="banner" src="images/opportunitiesbanner.png"  height="93"  /></a>
+
+ </div>
+ <link href="css\opportunities.css" rel="stylesheet">
+       <div class="container" id="main-div">
+
+
+	</div>
+  <!-- /container -->
+<!-- links that we needed ( linked to folders -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+				$(document).ready(function(){
+		
+			$("#menusystem").load("header.html")
+			
+				$.ajax({
+					type: "GET",
+					url: "opportunities.xml",
+					dataType: "xml",
+					success: function(xml) {
+						var output = "";
+						$(xml).find('opportunity').each(function(){
+							
+							var title = $(this).attr('title');
+							var posted = $(this).attr('posted');
+							
+							if(title == "BREAK")
+									output += "<div class='break'>" + posted + "</div>"
+							else{
+								var desc = $(this).find('description').text();
+								var posted = $(this).attr('posted');
+								var logo = $(this).attr('logo');
+								var website = $(this).find('website').text();
+								var link = $(this).find('link').text();
+								output += "<div class='opportunity'><div class='title'>" + title + "</div><img src='" + logo + "'>";
+								output += "<div class='description'>" + desc + "<hr/><span class='website'>Website: <a href='" +  website + "'>" + website +  "</a></span>"
+								if(link != ""){
+									output += "<span class='link'>Apply: <a href='" + link + "'>" + link + "</a></span>"
+								}
+								output +="</div>";
+								output += '</div>';
+							}
+						});
+						$('#main-div').html(output);
+					}
+				});
+			})
+			
+
+
+	</script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js\ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Environmental Engineering</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css\bootstrap-theme.min.css" rel="stylesheet">
+	 <link href="css\carousel.css" rel="stylesheet">
+<style>
+    img.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	#mapviewer{ text-align:center;padding:10px; border-radius:10px;margin:10px; }
+			#mapviewer img{border-top-left-radius:10px;border-top-right-radius:10px;margin-top:5px;}
+			#mapviewer iframe{border-bottom-left-radius:10px;border-bottom-right-radius:10px;}
+			#mapviewer span{display:block;margin:5px 10px 5px 10px;padding:4px 0px 4px 0px;font-size:1.25em;font-weight:bold;}
+</style>
+
+  </head>
+
+  <body>
+
+  <div class="navbar-wrapper">
+      <div class="container" id="menusystem">
+
+
+	</div>
+
+	<img class="banner" src="images/location.png"  height="93">
+<!-- <br />Image by <a href="http://cooltext.com">Cool Text: Free Logos and Buttons</a> - <a href="http://cooltext.com/Logo-Design?LogoID=1178409319">Create An Image Just Like This</a> -->
+	
+    <!--<div class="container theme-showcase" role="main">
+
+      <a><img class="banner" src="images/opportunitiesbanner.png" width="506" height="93"  /></a>
+
+ </div> -->
+
+ <div class="container" id="main-div">
+<div class="jumbotron">
+<div id="mapviewer">
+					  <span id="address">32-24 Corporal Kennedy St<br/>Bayside, New York 11361</span>
+					  <iframe id="map" Name="mapFrame" scrolling="no" width="410" height="300" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=16&amp;cp=40.77179721642221~-73.780378125899&amp;sty=h&amp;draggable=true&amp;v=2&amp;dir=0&amp;where1=32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;form=LMLTEW&amp;pp=40.771797224879265~-73.78037832677364&amp;mkt=en-us&amp;emid=6fbf1b92-f1f9-41bf-218e-5502c8d377be&amp;w=410&amp;h=300"></iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=40.77179721642221~-73.780378125899&amp;lvl=16&amp;sty=h&amp;where1=32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a id="LME_directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=40.77179721642221~-73.780378125899&amp;rtp=~pos.40.771797224879265_-73.78037832677364_32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;lvl=16&amp;sty=h&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;<a id="LME_birdsEye" href="http://www.bing.com/maps/?mm_embed=be&amp;cp=40.77179721642221~-73.780378125899&amp;lvl=18&amp;sty=b&amp;where1=32-24+Corporal+Kennedy+St%2C+Bayside%2C+NY+11361&amp;form=LMLTEW" target="_blank">View Bird's Eye</a></div>
+			</div>
+	
+	 </div>
+	</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script>
+		$(document).ready(function(){
+		
+			$("#menusystem").load("header.html")
+			
+			
+		})				
+	</script>
+   <script src="js\bootstrap.min.js"></script>
+    <script src="js\docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js\ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
